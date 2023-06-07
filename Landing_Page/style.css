@@ -1,0 +1,380 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.d-cen{
+    display: flex;
+    justify-content: center;
+}
+
+.upper-cont{
+    background-image: url("background-upper.jpg");
+    height: 70vh;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.nb-sec1{
+    width: 20%;
+}
+
+.nb-head{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 40px;
+    margin: 0px;
+    padding: 5px;
+}
+
+.nb-sec2{
+    width: 80%;
+    height: 45px;
+    display: flex;
+}
+
+.navbar ul{
+    width: 80%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    width: 15%;
+    height: 100%;
+}
+
+.nb-link{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nb-link::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    height: 4px;
+    width: 0%;
+    transition: width 0.7s;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.navbar ul li:hover .nb-link::after{
+    width: 100%;
+}
+
+
+.nb-sec2 button{
+    height: 38px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: border 0.3s,color 0.3s;
+}
+
+.nb-sec2 button:hover{
+    border: 2px solid rgb(252, 69, 3);
+    color: red;
+}
+
+.head-cont{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.phn-img{
+    height: 450px;
+    width: 450px;
+}
+
+.head-content{
+    width: 40%;
+    margin-top: 100px;
+}
+
+#typing-id{
+    height: 50px;
+    position: relative;
+}
+
+#typing-id::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 5px;
+    width: 20px;
+    margin-left: 2px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.head-button{
+    height: 38px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-width: 0px;
+    background-color: rgb(255, 64, 0);
+    transition: border 0.3s,background-color 0.3s;
+}
+
+.head-button:hover{
+    background-color: red;
+}
+
+.char-cont{
+    background-color: aliceblue;
+    padding: 20px;
+    /* height: 250px; */
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.char-card{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    /* height: 180px; */
+    width: 320px;
+    margin: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.4s,color 0.4s;
+}
+
+.char-card:hover{
+    background-color: coral;
+    color: white;
+}
+
+.cc-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.cc-content{
+    padding: 5px;
+    width: 70%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-app{
+    margin: 60px 0px;
+    overflow-x: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-content{
+    width: 40%;
+    padding: 20px;
+}
+
+.watch-img{
+    height: 400px;
+    width: 400px;
+}
+
+.aa-btn{
+    height: 40px;
+    width: 250px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-width: 0px;
+    background-color: rgb(255, 64, 0);
+}
+
+.feature-cont{
+    padding: 20px;
+    background-color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.feature-content{
+    margin: 40px auto;
+    width: 40%;
+    text-align: center;
+}
+
+.feature-card-cont{
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-card{
+    text-align: center;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 15px;
+    transition: background-color 0.4s,color 0.4s;
+}
+
+.feature-card:hover{
+    background-color: coral;
+    color: white;
+}
+
+.payment-cont{
+    padding: 30px 0px 40px;
+    background-color: aliceblue;
+}
+
+.payment-img{
+    height: 300px;
+    width: 500px;
+}
+
+.pay-m-img{
+    height: 80px;
+    width: 400px;
+}
+
+.watch-move{
+    padding: 50px 0px;
+}
+
+.watch-logo-img img{
+    height: 250px;
+    width: 330px;
+    margin-left: 50px;
+}
+
+.footer{
+    background-color: rgb(39, 38, 38);
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-logo{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-link{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-link ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.footer-img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 960px){
+    .phn-img{
+        display: none;
+    }
+
+    .nb-head{
+        margin-left: 15px;
+        font-size: 30px;
+    }
+
+    .head-cont{
+        margin-top: 10px;
+    }
+
+    .head-content{
+        width: 70%;
+    }
+
+    .nb-sec2{
+        display: none;
+    }
+
+    .char-cont{
+        flex-direction: column;
+    }
+
+    .about-app{
+        flex-direction: column;
+    }
+
+    .about-content{
+        width: 100%;
+    }
+
+    .feature-content{
+        width: 75%;
+    }
+
+    .feature-card-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo{
+        display: none;
+    }
+
+    .footer-link{
+        width: 100%;
+    }
+
+    .footer-link h2{
+        font-size: 18px;
+    }
+
+    .footer-link a{
+        font-size: 14px;
+    }
+}
