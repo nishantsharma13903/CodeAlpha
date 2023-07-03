@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/icons8-convert-48.png">
+    <title>Image Convertor</title>
+
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="upper-container">
+            <h1 class="main-head">Welcome to the <br> <span class="main-head-part" >Image Convertor</h1>
+        </div>
+
+        <!-- Link for download Image -->
+        <a id="downloadlink" href="" style="display: none;">click here</a>
+        
+        <div class="card-container">
+
+            <!-- Jpg to Png -->
+            <div class="card card-jp">
+                <h1 class="card-head">Jpg to Png</h1>
+                <hr><br>
+                <div class="d-col-cen">
+                    <div class="select-file">
+                        <input type="file" accept=".jpg" id="jp-file">
+                    </div>
+                    <div class="">
+                        <img src="Images/undraw_image_upload_re_w7pm.svg" style="height: 130px;width: 140px;margin-bottom: 13px;" alt="" id="card-img-jp"><br>
+                        <img src="Images/loading-gif2-1--unscreen.gif" alt="" style="height: 120px;width: 140px;" id="card-gif-jp">
+                    </div>
+                    <button class="up-btn" onclick="convertJpgToPng()">
+                        <span id="btn-text-jp">Convert</span>
+                        <span id="prog-per-jp"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Png to Jpg -->
+            <div class="card card-pj">
+                <h1 class="card-head">Png to Jpg</h1>
+                <hr><br>
+                <div class="d-col-cen">
+                    <div class="select-file">
+                        <input type="file" accept=".png" id="pj-file">
+                    </div>
+                    <div class="">
+                        <img src="Images/undraw_image_upload_re_w7pm.svg" style="height: 130px;width: 140px;margin-bottom: 13px;" alt="" id="card-img-pj"><br>
+                        <img src="Images/loading-gif2-1--unscreen.gif" alt="" style="height: 120px;width: 140px;" id="card-gif-pj">
+                    </div>
+                    <button class="up-btn" onclick="convertPngToJpg()">
+                        <span id="btn-text-pj">Convert</span>
+                        <span id="prog-per-pj"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Jpg to Webp -->
+            <div class="card card-jw">
+                <h1 class="card-head">Png to Jpg</h1>
+                <hr><br>
+                <div class="d-col-cen">
+                    <div class="select-file">
+                        <input type="file" accept=".jpg" id="jw-file">
+                    </div>
+                    <div class="">
+                        <img src="Images/undraw_image_upload_re_w7pm.svg" style="height: 130px;width: 140px;margin-bottom: 13px;" alt="" id="card-img-jw"><br>
+                        <img src="Images/loading-gif2-1--unscreen.gif" alt="" style="height: 120px;width: 140px;" id="card-gif-jw">
+                    </div>
+                    <button class="up-btn" onclick="convertJpgToWebp()">
+                        <span id="btn-text-jw">Convert</span>
+                        <span id="prog-per-jw"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Png to Webp -->
+            <div class="card card-pw">
+                <h1 class="card-head">Png to Jpg</h1>
+                <hr><br>
+                <div class="d-col-cen">
+                    <div class="select-file">
+                        <input type="file" accept=".png" id="pw-file">
+                    </div>
+                    <div class="">
+                        <img src="Images/undraw_image_upload_re_w7pm.svg" style="height: 130px;width: 140px;margin-bottom: 13px;" alt="" id="card-img-pw"><br>
+                        <img src="Images/loading-gif2-1--unscreen.gif" alt="" style="height: 120px;width: 140px;" id="card-gif-pw">
+                    </div>
+                    <button class="up-btn" onclick="convertPngToWebp()">
+                        <span id="btn-text-pw">Convert</span>
+                        <span id="prog-per-pw"></span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/nishant-sharma2348/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/nishantsharma13903"><i class="fa fa-github"></i></a>
+            <a href="https://www.youtube.com/channel/UCUQnI4nNnfw1XVSkFtewDfQ"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <script src="Script/script_jp.js"></script>
+    <script src="Script/script_pj.js"></script>
+    <script src="Script/script_jw.js"></script>
+    <script src="Script/script_pw.js"></script>
+
+</body>
+</html>
